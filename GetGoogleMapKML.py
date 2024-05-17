@@ -26,8 +26,8 @@ def setupParseCmdLine():
 	# epilog="text at bottom of help")
 	parser.add_argument("map_id",
 		help="The google map id - found between the mid= and & in the map url.  Map must have sharing enabled")
-	parser.add_argument("kml_file",
-		help="Export the google map KML data into this path\file")
+	parser.add_argument("output",
+		help="path\filename - minus the extension - for the KML file.  The .kml extension will be added by this program")
 	return(parser.parse_args())
 #========================================================================================
 # Main
@@ -35,11 +35,11 @@ def setupParseCmdLine():
 def main():
 	# Parse the command line arguments
 	args = setupParseCmdLine()
-
+	KMLFilename = args.output + ".kml"
 	print("")
 	print("Export the KML data for a google my maps custom map.")
 	print("  Google map ID:   ",args.map_id)
-	print("  Export KML file: ",args.kml_file)
+	print("  Export KML file: ",KMLFilename)
 
 	getURLRequest = GET_URL_PREFIX+str(args.map_id)+GET_URL_SUFFIX
 	#print("  URLRequst:       ",getURLRequest)
@@ -48,15 +48,15 @@ def main():
 		case 200:
 			# Successful GET request
 			try:
-				with open(str(args.kml_file), 'w', encoding='utf-8') as file:
+				with open(KMLFilename, 'w', encoding='utf-8') as file:
 					file.write(response.text)
 				# Text written successfully to {file_path}
 				returnCode = 0
 			except FileNotFoundError:
-				print(f"  Error: The specified file path {str(args.kml_file)} does not exist.")
+				print(f"  Error: The specified file path {KMLFilename} does not exist.")
 				returnCode = 1
 			except PermissionError:
-				print(f"  Error: You do not have permission to write to the file: {str(args.kml_file)}.")
+				print(f"  Error: You do not have permission to write to the file: {KMLFilename}.")
 				returnCode = 2
 			except Exception as e:
 				print(f"  Error: An unexpected error occurred: {str(e)}")
