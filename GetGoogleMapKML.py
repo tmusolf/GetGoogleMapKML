@@ -1,5 +1,9 @@
+#!/usr/bin/python
 #========================================================================================
 # Export a google my maps custom map KML file
+#
+# 5/17/2024 V1.0 Initial version
+# 5/17/2024 V1.1 Fixed bad error message code around URL call and file write
 #========================================================================================
 import sys
 import requests
@@ -8,7 +12,7 @@ import os
 from pathlib import Path
 
 PROGRAM_NAME = Path(sys.argv[0]).stem
-PROGRAM_VERSION = "1.0"
+PROGRAM_VERSION = "1.1"
 # This is the magic URL that will initiate a get request to google and get the KML data
 # for the specified google map.
 GET_URL_PREFIX = "https://www.google.com/maps/d/u/0/kml?forcekml=1&mid="
@@ -38,7 +42,7 @@ def main():
 	print("  Export KML file: ",args.kml_file)
 
 	getURLRequest = GET_URL_PREFIX+str(args.map_id)+GET_URL_SUFFIX
-	print("  URLRequst:       ",getURLRequest)
+	#print("  URLRequst:       ",getURLRequest)
 	response = requests.get(getURLRequest)
 	match response.status_code:
 		case 200:
@@ -47,21 +51,21 @@ def main():
 				with open(str(args.kml_file), 'w', encoding='utf-8') as file:
 					file.write(response.text)
 				# Text written successfully to {file_path}
-				responseCode = 0
+				returnCode = 0
 			except FileNotFoundError:
-				# print(f"Error: The specified file path '{file_path}' does not exist.")
-				responseCode = 1
+				print(f"  Error: The specified file path {str(args.kml_file)} does not exist.")
+				returnCode = 1
 			except PermissionError:
-				print(f"Error: You do not have permission to write to the file '{file_path}'.")
-				responseCode = 2
+				print(f"  Error: You do not have permission to write to the file: {str(args.kml_file)}.")
+				returnCode = 2
 			except Exception as e:
-				print(f"Error: An unexpected error occurred: {str(e)}")
-				responseCode = 9
+				print(f"  Error: An unexpected error occurred: {str(e)}")
+				returnCode = 9
 		case 403:
-			print(f"  Error: 403 Share permision for map not set")
+			print("  Error: 403 Share permision for map not set")
 			returnCode = 403
 		case 404:
-			print(f"  Error: 404 Bad map ID value")
+			print("  Error: 404 Bad map ID value")
 			returnCode = 404
 		case _:
 			print(f"  Error: An unexpected error occurred: {str(response.status_code)}")

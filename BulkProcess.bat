@@ -7,7 +7,7 @@ echo The google map name doesn't have to be the actual name it's the string you 
 echo.
 setlocal EnableDelayedExpansion
 set KMLtoGPX_PROGRAM="U:\Projects\Computer Projects\PC Software\KMLtoOSMAndGPXTracks\KMLtoOSMAndGPXTracks.py"
-set MAPtoKML_PROGRAM="U:\Projects\Computer Projects\PC Software\BAT\GoogleMapsToOSMAnd\GetMapKML.py"
+set MAPtoKML_PROGRAM="U:\Projects\Computer Projects\PC Software\GetGoogleMapKML\GetGoogleMapKML.py"
 :getinput
 set /p infile= "Enter filename containing one comma separated pair of values for each line (<name>,<mapID>): "
 
