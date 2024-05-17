@@ -27,8 +27,13 @@ set /a count=0
 set /a errorCount=0
 
 :: Read the file containing infile and outfile names
+:: Lots of batch file crap having to do with file names with spaces
+:: and how they are quoted.  On input from cmd line use double quotes
+:: around paths that have spaces.  Single quotes won't work.  Here in the batch
+:: file I found a reference that said use single quotes and type command
+:: to get around these issues.
 :: Tokens split on comma, first token put in %%A and second in %%B
-for /f "eol=# tokens=1,2 delims=," %%A in (%infile%) do (
+for /f "eol=# tokens=1,2 delims=," %%A in ('type %infile%') do (
 	:: Execute the batch file with infile, outfile, and current date as arguments
 	set /a count+=1
 	set "outputfolder=%%A-%CurrentDate%"
