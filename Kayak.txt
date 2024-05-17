@@ -1,0 +1,52 @@
+# This is a comment
+# <Name>,<mapID>
+# <Name> String to use as file name when processing file
+# <mapID> Unique string ID from the URL of the google map. Founds after the mid= in the map URL
+#
+C:\Users\Tom\Downloads\Multi-day trips,1m3s1vJU4GEw1cgfa_ehgCRat5jJtcjMw
+C:\Users\Tom\Downloads\Alameda Creek,1EvnP1qTMFX1kxlnNHCKugFo-nxFKAiw
+C:\Users\Tom\Downloads\American Middle Fork,15x7wAZSvQS1H3eGf1tlEsesoBPckoZU5
+C:\Users\Tom\Downloads\American North Fork,1ZWwijd97MT5imylCFtDobguNbksyDUzK
+C:\Users\Tom\Downloads\Arkansas,1YeOTvkH4YbHrIySPIaeDKLElzv6TMVhw
+C:\Users\Tom\Downloads\Arroyo Seco,1icS3K_Peyl8zNhqCigr8-qXv8lA
+C:\Users\Tom\Downloads\Battle Creek,1Jp6OdDmlg5ub2oZDALXmZ0yrbs_rL_7C
+C:\Users\Tom\Downloads\Bay Area,1p0UMQ-3EkzdeThX3O9nYbCjaq-H_b7hc
+C:\Users\Tom\Downloads\Bear Creek,1sMlZ5wvtJpooKVN1NlEGB3RkKK1OmeaS
+C:\Users\Tom\Downloads\Cache Creek,1TXkgQlFDgaayu8YlyCG58huzzi1ObAxZ
+C:\Users\Tom\Downloads\Colorado,1p6wTLlFUw8GO0hjFH1wGmS02zuk2xe-o
+C:\Users\Tom\Downloads\Deschutes,1kBsPYMlC7QkwMAPI09sdRUij28LcR4Kv
+C:\Users\Tom\Downloads\Delores,1Ni-Efke97dj6mRQ4wOnIyvuNrVb7zQbi
+C:\Users\Tom\Downloads\East Fork Carson,1TbIpxcvoqYAO31fTmbnrlG_Os0PTagc
+C:\Users\Tom\Downloads\Ecuador-Summary,1IkHD45TYoKSV9_pFn2D__YcJ0JULsgIq
+C:\Users\Tom\Downloads\Eel,1OrLTR6eHEe6JQYYwZndikxEEiE-tOaFa
+C:\Users\Tom\Downloads\Feather,1rwrs6gFxXOUBOqeBQ52cFX6wFcsOWz-O
+C:\Users\Tom\Downloads\Grande Ronde,1w67the_-uOXW7MCqR8JQxGYEs_z_bJGM
+C:\Users\Tom\Downloads\Green Ladore Yampa,1o-YOl-EMQq583yrnrxLHQp4HpSMBMzL7
+C:\Users\Tom\Downloads\John Day,1r-kur8J5me2Mu4lYPMrbXFIOoG36Vld8
+C:\Users\Tom\Downloads\Kern & Brush Creek,1HbDQrsiB-XmxDZoVx1v7uimDGFZ98AKF
+C:\Users\Tom\Downloads\Kings,1pePPEF6mRr5UQP5nUQPhQki4wPdQAtQu
+C:\Users\Tom\Downloads\Klammath,1r7Shu9iXnLsvt1Q6i5gEnzECAqcSbqcz
+C:\Users\Tom\Downloads\McCloud,13-90zPc-bP1suT71ePpYwf4cBu3iXeV2
+C:\Users\Tom\Downloads\OR-McKenzie,1PClLjzlbdyOvz4k7IpjCPSkzH86al2c
+C:\Users\Tom\Downloads\Merced,1YaV6AlQYaeYULBDRWJ7ucVC8uU9whB92
+C:\Users\Tom\Downloads\OR-Metolius,1JhTCO0LVvqFi7YK-1fzQwj5AoZQuWSc
+C:\Users\Tom\Downloads\OR-Owyhee Bruneau Jarbridge,1IMvZ3R0nigBzNXeweM6wPvNRYWrCwJ8c
+C:\Users\Tom\Downloads\Pit,1a2PGCtepdX35Yn9lIYgy0Aq_fkSNbsi7
+C:\Users\Tom\Downloads\Rancheria,1HqkpSNv1BVMou5CFp_gLh-n6xACcL9M
+C:\Users\Tom\Downloads\OR-Rogue,1ve-tBisTkPWThMq1U2Jr207fVHJGZD8-
+C:\Users\Tom\Downloads\Sacramento,1XsKnQ2P6M9zJnLTHxWkyS4er0dyBkrFE
+C:\Users\Tom\Downloads\ID-Salmon Main & Middle,1dQl-5XFgaaqm6zcU8qO0fzrt3IwoV5rk
+C:\Users\Tom\Downloads\AZ-Salt,1C0MGV53BnLfu7AZ25ZyVmaCohakUGXHS
+C:\Users\Tom\Downloads\San Joaquin-Horseshoe Bend,1kJObbHF0eG4esYGByXqSe25Y1HXe_Q77
+C:\Users\Tom\Downloads\UT-San Juan,16o-eGlUzNjKVxTJoqLPoqWR7ZQrqlru1
+C:\Users\Tom\Downloads\San Lorenzo,1VFhx_JIE5NX0n5uc39rijXTYvsnt5S9I
+C:\Users\Tom\Downloads\ID-Selway,1G6hhfIFRpYFequZchBa6yT_Xbhqu-9uD
+C:\Users\Tom\Downloads\South Fork Silver-Ice house,1I6DplxIePehV-uKj7UIZ0al6dns
+C:\Users\Tom\Downloads\Smith,10CxiN6BYM0O0yJZUWYI0bNzqYYm73Co
+C:\Users\Tom\Downloads\ID-Snake,1jAGt8oxXbOYq-dR64KadlNbbm4pHBuft
+C:\Users\Tom\Downloads\Tiger Creek,1NUrwJfVzmBkvL0ZXQVXaqTugL9YXVV_L
+C:\Users\Tom\Downloads\Trinity,1X12TZ6aOXSqhQv9qH_bc9bE3laXlYoyX
+C:\Users\Tom\Downloads\Truckee,1Ao3pFeXshb-S_1VDQEffui_QCct9yzzs
+C:\Users\Tom\Downloads\Tuolumne,1Z5Wpadqyff5qoikIpKBiP-FDfyP8Suz4
+C:\Users\Tom\Downloads\OR-Umpqua,1soxOU6oEJyG2O7EM3KcTGVgqqEyeo_2X
+C:\Users\Tom\Downloads\Yuba,12ggRtcKXLiEF9bq3rHBMjtaQ2T1hbycf
